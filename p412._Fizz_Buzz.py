@@ -1,6 +1,9 @@
 # 412. Fizz Buzz
 
-# time - 52ms
+# runtime - 46ms if following line is changed-
+# if(is_divisible_by_3 and is_divisible_by_5) ----> if(num % 15 == 0)
+
+# runtime - 52ms
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
         final_list = []
