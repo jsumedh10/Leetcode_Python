@@ -1,5 +1,5 @@
 # 27. Remove Element
-# Run Time - 33ms
+# Run Time - 33ms -> only one pass over the list
 
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
@@ -13,7 +13,7 @@ class Solution:
         return ptr
 
 
-# Only 101/115 TCs passed with this code
+# Run Time - 39ms -> Using two pointers approach
 
 # class Solution:
 #     def removeElement(self, nums: List[int], val: int) -> int:
@@ -22,12 +22,13 @@ class Solution:
 #         while(first <= last):
 #             if nums[last] == val:
 #                 last -= 1
+#                 continue
 #             if nums[first] == val:
 #                 nums[first], nums[last] = nums[last], nums[first]
 #                 last -= 1
 #             first += 1
 
-#             #print(" ".join([str(x) for x in nums]))
+#             print(" ".join([str(x) for x in nums]))
             
 
 #         return first
